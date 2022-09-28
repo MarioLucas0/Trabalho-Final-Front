@@ -13,7 +13,6 @@ function createCard() {
     .then(response => response.json())  
     .then(response => {
 
-  
 
     const divCentral = document.createElement('div')
     divCentral.classList = 'central'
@@ -111,11 +110,7 @@ function createCard() {
                while (modal.firstChild) {
                    modal.removeChild(modal.firstChild);
                }
-            })
-
-
-  
-              
+            })      
           })
        
 

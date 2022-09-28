@@ -5,103 +5,129 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style_sobre.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter+Tight:wght@600;800&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="../../css/style_sobre.css">
+  <title>Sobre Nós</title>
 
 </head>
 
-<body>
 
-  <header>
+
+
+
+
+<header>
+  <nav class="navbar navbar-dark fixed-top">
     <div class="container">
 
-      <div class="left">
-        <div class="logo">
-          <img src="img/logo.png" alt="">
-        </div>
-      </div>
+      <a class="navbar-brand" href="index.html">Bootstrap Hamburger Menu</a>
 
-      <div class="right">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-        <nav class="nav_header">
-          <ul>
-            <li>
-              <a href="#">Sobre</a>
-            </li>
-
-          </ul>
-          <ul>
-            <li>
-              <a href="#">Inicio</a>
-            </li>
-
-          </ul>
-          <ul>
-            <li>
-              <a href="#">Figurinhas</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="icon_login">
-          <img src="img/login-icon.svg">
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link scroll-link" href="#top-content">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-link" href="#section-1">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-link" href="#section-2">Fale Conosco</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-link" href="#section-3">Login</a>
+          </li>
+        </ul>
       </div>
 
     </div>
-  </header>
+  </nav>
+</header>
+
+<section>
+  <div class="dados">
+
+
+  </div>
+
+</section>
 
 
 
 
-  <footer>
-    <div class="container_rodape">
 
-      <!-- Item retirado do Bootstrap -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Sobre Nós</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#">Fale conosco</a>
-          </div>
+<footer>
+  <div class="container-footer">
+    <div class="row-footer">
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#">Quem somos </a></li>
+
+        </ul>
+      </div>
+
+
+      <div class="footer-col">
+        <h4>Obter ajuda</h4>
+        <ul>
+          <li><a href="#">Entre em contato</a></li>
+
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Loja online</h4>
+        <ul>
+          <li><a href="#">Figurinhas Ícones</a></li>
+          <li><a href="#">Figurinhas lendárias</a></li>
+
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>RECEBA AS NOVIDADES!</h4>
+        <div class="form-sub">
+          <form>
+            <input type="email" placeholder="Digite o seu e-mail" required>
+            <button>inscreva-se</button>
+          </form>
         </div>
-      </nav>
+
+
+
+      </div>
 
     </div>
-  </footer>
+  </div>
+</footer>
 
 
-
-
-
-
-
-
-  <script src="js/main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-
+<script src="../../js/quemSomos.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 
 </html>
-
-<!-- Raridade: Icone e Lendário
-Nacionalidade:
-Descrição:  -->
