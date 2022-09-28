@@ -1,0 +1,148 @@
+[ 
+    {
+      "id": "1",
+      "name": "Away de Petrópolis",
+      "img": "https://i.postimg.cc/8P73qSng/Away.png",
+      "descricao": "Não existem frases para a familia ditas por Away."
+    },
+    {
+      "id": "2",
+      "name": "Luva de Pedreiro",
+      "img": "https://i.postimg.cc/4d8LSL63/Luva.png",
+      "descricao": "O melhor do mundo! Graças a Deus! SIIIIIIIIIIII!!! RECEBA!"
+    },
+    {
+      "id": "3",
+      "name": "Detonator",
+      "img": "https://i.postimg.cc/XvkDw7Xd/Detonator.png",
+      "descricao": "Deus do Metal! Simplesmente"
+    },
+    {
+      "id": "4",
+      "name": "Marquito",
+      "img": "https://i.postimg.cc/cCr9yRhB/marquito.png",
+      "descricao": "Ajudante de palco do Ratinho. Sempre apanhando. Você não é o pai!"
+    },
+    {
+      "id": "5",
+      "name": "Advogado Paloma",
+      "img": "https://i.postimg.cc/4yq8JYFk/Paloma.png",
+      "descricao": "Se amar é crime, eu sou trafincante. Eu sou a Lei, meu chapa. Bandindinho!"
+    },
+    {
+      "id": "6",
+      "name": "Cafezinho",
+      "img": "https://i.postimg.cc/TYBSx4ZL/cafezinho.png",
+      "descricao": "O iniguálavel! Salvador do estudante médio!"
+    },
+    {
+      "id": "7",
+      "name": "Cachorro Caramelo",
+      "img":  "https://i.postimg.cc/52vr2mVP/Caramelo.png",
+      "descricao": "O Rei da ruas, mestre dos bairros!"
+    },
+    {
+      "id": "8",
+      "name": "Coxinha",
+      "img": "https://i.postimg.cc/hGB5z74K/coxinha.png",
+      "descricao": "Tu come pela ponta ou pela bundinha? Isso diz muito sobre quem você é."
+    },
+    {
+      "id": "9",
+      "name": "Brigadeiro",
+      "img": "https://i.postimg.cc/XNHmHJLg/brigadeiro.png",
+      "descricao": "Taca uma panela dessa e uma colher no colo do teu pai!"
+    },
+    {
+      "id": "10",
+      "name": "Açai",
+      "img": "https://i.postimg.cc/qq5FzbqF/acai.png",
+      "descricao": "Tem gente que come com peixe e tem gente que come com frutas.(Com leite em pó por cima fica coisa de maluco) "
+    }
+]
+
+
+/* [
+  {
+   "id": "1",
+   "cardId": "1",
+   "name": "Away de Petrópolis",
+   "img": "https://i.postimg.cc/8P73qSng/Away.png",
+   "gif": "https://i.postimg.cc/6Q6bgZJ0/away.gif",
+   "descricao": "Não existem frases para a familia ditas por Away."
+  },
+  {
+   "id": "2",
+   "cardId": "2",
+   "name": "Luva de Pedreiro",
+   "img": "https://i.postimg.cc/4d8LSL63/Luva.png",
+   "gif": "https://i.postimg.cc/ht0cVV1b/recaba-luva-de-pedreiro.gif",
+   "descricao": "O melhor do mundo! Graças a Deus! SIIIIIIIIIIII!!! RECEBA!"
+  },
+  {
+   "id": "3",
+   "cardId": "3",
+   "name": "Detonator",
+   "img": "https://i.postimg.cc/XvkDw7Xd/Detonator.png",
+   "gif": "https://i.postimg.cc/GmRbBXGm/Detonator.gif",
+   "descricao": "Deus do Metal! Simplesmente"
+  },
+  {
+   "id": "4",
+   "cardId": "4",
+   "name": "Marquito",
+   "img": "https://i.postimg.cc/cCr9yRhB/marquito.png",
+   "gif": "https://i.postimg.cc/VsMyjjYr/ratinho-marquito.gif",
+   "descricao": "Ajudante de palco do Ratinho. Sempre apanhando. Você não é o pai!"
+  },
+  {
+   "id": "5",
+   "cardId": "5",
+   "name": "Advogado Paloma",
+   "img": "https://i.postimg.cc/4yq8JYFk/Paloma.png",
+   "gif": "https://i.postimg.cc/tCtLcpn9/advogado-Paloma.gif",
+   "descricao": "Se amar é crime, eu sou trafincante. Eu sou a Lei, meu chapa. Bandindinho!"
+  },
+  {
+   "id": "6",
+   "cardId": "6",
+   "name": "Cafezinho",
+   "img": "https://i.postimg.cc/TYBSx4ZL/cafezinho.png",
+   "gif": "https://i.postimg.cc/Rhwj4zPQ/cafe.gif",
+   "descricao": "O iniguálavel! Salvador do estudante médio!"
+  },
+  {
+   "id": "7",
+   "cardId": "7",
+   "name": "Cachorro Caramelo",
+   "img": "https://i.postimg.cc/52vr2mVP/Caramelo.png",
+   "gif": "https://i.postimg.cc/K80CZf5V/cachorro-caramelo.gif",
+   "descricao": "O Rei da ruas, mestre dos bairros!"
+  },
+  {
+   "id": "8",
+   "cardId": "8",
+   "name": "Coxinha",
+   "img": "https://i.postimg.cc/hGB5z74K/coxinha.png",
+   "gif": "https://i.postimg.cc/y6w1K1N9/coxinha-maromba.gif",
+   "descricao": "Tu come pela ponta ou pela bundinha? Isso diz muito sobre quem você é."
+  },
+  {
+   "id": "9",
+   "cardId": "9",
+   "name": "Brigadeiro",
+   "img": "https://i.postimg.cc/XNHmHJLg/brigadeiro.png",
+   "gif": "https://i.postimg.cc/Gh1WzH2M/brigadeiro.gif",
+   "descricao": "Taca uma panela dessa e uma colher no colo do teu pai!"
+  },
+  {
+   "id": "10",
+   "cardId": "10",
+   "name": "Açai",
+   "img": "https://i.postimg.cc/qq5FzbqF/acai.png",
+   "gif": "https://i.postimg.cc/zGz9Z6TK/acai.gif",
+   "descricao": "Tem gente que come com peixe e tem gente que come com frutas.(Com leite em pó por cima fica coisa de maluco) "
+  }
+ ]
+
+ */
