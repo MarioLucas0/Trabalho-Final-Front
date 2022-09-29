@@ -7,29 +7,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="../../css/fale_conosco.css">
+  <link rel="stylesheet" href="fale_conosco.css">
+
   <title>Fale conosco</title>
 </head>
 
 <body>
-  <div class="container">
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="/"><img src="/img/logo.svg" alt=""></a>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Fale Conosco</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container2">
     <h1>Fale conosco</h1>
-    <form>
+    <form target="_self" action="validacaoform.html">
       <div>
-        <input type="text" placeholder="Digite seu nome" class="inputs">
+        <input type="text" placeholder="Digite seu nome" class="inputs" required>
       </div>
       <div>
-        <input type="email" placeholder="Digite seu email" class="inputs">
+        <input type="email" placeholder="Digite seu email" class="inputs" required>
       </div>
       <div>
-        <input type="tel" placeholder="Digite seu (DDD)+Telefone" class="inputs">
+        <input type="tel" placeholder="Digite seu (DDD)+Telefone" class="inputs" required>
       </div>
       <div>
-        <input type="number" placeholder="Numero do pedido" class="inputs">
+        <input type="number" placeholder="Numero do pedido" class="inputs" required>
       </div>
       <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Descreva sua solicitação"
-        class="inputs"></textarea>
+        class="inputs" required></textarea>
+
       <h2>Assunto</h2>
+
       <div class="box-select">
         <div>
           <input type="radio" id="troca" value="troca" name="assunto">
@@ -47,35 +70,92 @@
           <input type="radio" id="outro" value="outro" name="assunto">
           <label for="outro">Outro</label>
         </div>
-        <div>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Enviar
-          </button>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Requisição</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                Enviado com Sucesso. <p>Tempo médio de resposta 48Hrs</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
-                <button type="button" class="btn btn-primary">Home</button>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </form>
+
+      <h2>Conte nos sua experiencia em nosso site</h2>
+      
+      <div id="experiencia">
+        <div>
+          <input type="radio" value="pessima" name="avaliacao">
+          <label for="pessima">Pessima</label>
+        </div>
+        <div>
+          <input type="radio" value="ruim" name="avaliacao">
+          <label for="ruim">Ruim</label>
+        </div>
+        <div>
+          <input type="radio" value="regular" name="avaliacao">
+          <label for="regula">Regular</label>
+        </div>
+        <div>
+          <input type="radio" value="bom" name="avaliacao">
+          <label for="boa">boa</label>
+        </div>
+        <div>
+          <input type="radio" value="excelente" name="avaliacao">
+          <label for="excelente">Excelente</label>
+        </div>
+
+      </div>
+      <div id="btn-enviar">
+        <div>
+          <INPUT type="reset" value="Limpar">
+        </div>
+        <div>
+          <input type="submit" value="Enviar">
+        </div>
+
+      </div>
   </div>
+  </form>
+  </div>
+  <footer>
+    <div class="container-footer">
+      <div class="row-footer">
+
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#">Quem somos </a></li>
+
+          </ul>
+        </div>
+
+
+        <div class="footer-col">
+          <h4>Obter ajuda</h4>
+          <ul>
+            <li><a href="#">Entre em contato</a></li>
+
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Loja online</h4>
+          <ul>
+            <li><a href="#">Figurinhas Ícones</a></li>
+            <li><a href="#">Figurinhas lendárias</a></li>
+
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>RECEBA AS NOVIDADES!</h4>
+          <div class="form-sub">
+            <form>
+              <input type="email" placeholder="Digite o seu e-mail" required>
+              <button>inscreva-se</button>
+            </form>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <script src="./javascript.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
