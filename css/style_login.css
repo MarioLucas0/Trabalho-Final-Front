@@ -1,10 +1,4 @@
-body {
 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-}
 
 body::before {
 
@@ -16,6 +10,9 @@ body::before {
   background-image: url(https://i.pinimg.com/originals/97/a5/32/97a532b3eb1a540f431c8c142c6cc499.jpg);
 
   -webkit-animation: backgroundZoomAnimate 20s forwards;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
   animation: backgroundZoomAnimate 20s forwards;
   
 

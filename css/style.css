@@ -10,106 +10,7 @@
 
 body {
     background-color: white;
-    padding-bottom: 10px;
 }
- 
-/* .navbar {
-    background: white;
-    transition: all .6s;
-    box-shadow: 0 2px 5px 1px rgba(51, 51, 51, 0.5);
-}
- 
-.navbar-dark .navbar-nav {
-    font-size: 15px;
-    color: #fff;
-    text-transform: uppercase;
-}
- 
- 
-.navbar-dark .navbar-nav .nav-link:focus {
-    color: #fff;
-    outline: 0;
-}
- 
-.navbar-dark .navbar-toggler {
-    border-color: #444;
-}
- 
-.navbar-dark .navbar-toggler:focus {
-    background: none;
-    outline: 0;
-}
- 
-.navbar-dark .navbar-toggler span {
-    display: block;
-    width: 30px;
-    height: 2px;
-    margin: 6px auto;
-    background: #fff;
-    transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
-}
-.navbar-dark .navbar-nav .nav-link {
-    text-decoration: none;
-    color: black;
-    font-family: 'Bungee', cursive;
-    position: relative;
-}
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #D94800;
-}
-.navbar-dark .navbar-nav .nav-link:after{
-  
-    content: "";
-    position: absolute;
-    background-color: black;
-    height: 3px;
-    width:0;
-    left: 0;
-    bottom: 2px;
-    transition: 0.3s;
-}
-.navbar-dark .navbar-nav .nav-link:hover:after {
-    width: 18%;
-    color: #D94800;
-}
-
-.navbar-dark .navbar-toggler:hover span,
-.navbar-dark .navbar-toggler:focus span {
-    background: #ccc;
-}
- 
-
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:first-of-type {
-    transform: rotate(45deg) translate(6px, 6px);
-}
- 
-
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
-    opacity: 0;
-}
- 
-
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:last-of-type {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
- 
-.navbar-dark .navbar-toggler[aria-expanded="false"] span {
-    transform: none;
-    opacity: 1;
-}
- 
-.navbar-brand {
-    width: 162px;
-    height: 44px;
-    background: url(../img/logo.png) left center no-repeat;
-    border: 0;
-    text-indent: -99999px;
-}
-
-
-} */
-
-
   
   a {
     color: #fff;
@@ -154,7 +55,7 @@ body {
     align-items: center;
     font-family: 'Bungee', cursive;
     background: #23232e;
-    height: 8vh;
+    height:11vh;
   }
   
   .nav-list {

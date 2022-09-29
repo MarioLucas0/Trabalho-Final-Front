@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../../css/style_login.css">
+
     <title>Login</title>
 
 </head>
@@ -20,7 +21,7 @@
 
 
     <div id="login">
-        <form class="card">
+        <form class="card" type="submit">
             <div class="card-header">
 
                 <h1>Login</h1>
@@ -44,7 +45,7 @@
 
                     <label for="password">Senha</label>
 
-                    <input type="password" id="password" autocomplete="off">
+                    <input type="password" id="senha" autocomplete="off">
 
                 </div>
 
@@ -52,7 +53,8 @@
 
             <div class="card-footer">
 
-                <input type="submit" value="Login" class="validar" onclick="logar(); return false">
+                <button type="submit" class="validar" onclick="logar(); return false">Login</button>
+
 
                 <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
 
@@ -64,14 +66,14 @@
     <script>
         function logar() {
 
-            var login = document.getElementById('usuario').value;
-            var senha = document.getElementById('password').value;
+            var usuario = document.getElementById('usuario').value;
+            var senha = document.getElementById('senha').value;
 
-            if (usuario == "admin" && pasword == "admin") {
+            if (usuario == "admin" && senha == "123") {
                 alert('Sucesso');
-                location.href = "home.html";
+                location.href = "../Home/index.html";
             } else {
-                alert('Usuario ou senha incorretos');
+                alert('Usuario ou senha incorretos!');
             }
 
         }

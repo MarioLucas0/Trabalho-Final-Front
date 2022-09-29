@@ -6,8 +6,13 @@ const openModal = document.querySelector('.openModal')
 
 
 window.onload =  createCard;
-
+AOS.init({
+  duration: 2000,
+  once: true
+})
 function createCard() {
+
+
 
     fetch('https://mocki.io/v1/ccb7defb-403b-4b7e-9af8-5a4b1a6eac11')
     .then(response => response.json())  
@@ -21,7 +26,7 @@ function createCard() {
     for(let i = 0; i < response.length; i++) {
         
     const divProdutos = document.createElement('div')
-    divProdutos.classList = 'cards'
+    divProdutos.classList = 'cards  fade-right'
     divCentral.appendChild(divProdutos)
 
     const img = document.createElement('img')
@@ -69,6 +74,7 @@ function createCard() {
        
            const box = document.createElement('div');
            box.classList = 'box js-close-modal';
+           box.setAttribute('data-aos',"fade-up-right")
            modal.appendChild(box)
        
            const buttonCloseModal = document.createElement('button');
