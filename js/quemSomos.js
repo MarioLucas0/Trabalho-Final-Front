@@ -6,10 +6,10 @@ function quemSomos() {
 
   const container = document.querySelector('.dados')
 
-
   fetch('https://mocki.io/v1/c3598082-6bc7-4504-a666-755c4cc6a832')
     .then(response => response.json())  
     .then(response => { 
+      console.log(response)
 
 
        for(let i = 0; i < response.length; i++) {
@@ -18,7 +18,7 @@ function quemSomos() {
         .then(response => response.json())  
         .then(response => {
 
-
+          console.log(response)
 
           const divCentral = document.createElement('div')
           divCentral.classList = 'central'
@@ -39,4 +39,9 @@ function quemSomos() {
 
     })
 
+
+
 }
+
+
+

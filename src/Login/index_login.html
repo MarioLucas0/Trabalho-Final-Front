@@ -23,10 +23,10 @@
         <form class="card">
             <div class="card-header">
 
-                <!-- <h2>Login</h2> -->
+                <h1>Login</h1>
 
-                <img src="https://img2.gratispng.com/20180802/zuu/kisspng-qatar-2022-fifa-world-cup-bid-2018-world-cup-qatar-fallound-the-smartest-podcasts-aggregator-5b62b790aa9451.5238072715331961766987.jpg"
-                    alt="logo">
+                <!-- <img src="https://img2.gratispng.com/20180802/zuu/kisspng-qatar-2022-fifa-world-cup-bid-2018-world-cup-qatar-fallound-the-smartest-podcasts-aggregator-5b62b790aa9451.5238072715331961766987.jpg"
+                    alt="logo"> -->
 
             </div>
 
@@ -52,7 +52,7 @@
 
             <div class="card-footer">
 
-                <input type="submit" value="Login" class="submit">
+                <input type="submit" value="Login" class="validar" onclick="logar(); return false">
 
                 <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
 
@@ -61,6 +61,22 @@
         </form>
     </div>
 
+    <script>
+        function logar() {
+
+            var login = document.getElementById('usuario').value;
+            var senha = document.getElementById('password').value;
+
+            if (usuario == "admin" && pasword == "admin") {
+                alert('Sucesso');
+                location.href = "home.html";
+            } else {
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+
+    </script>
 </body>
 
 </html>
