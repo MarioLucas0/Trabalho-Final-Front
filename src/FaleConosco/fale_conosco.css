@@ -13,6 +13,7 @@ body {
 }
 
 a {
+<<<<<<< HEAD
   color: #dbc8a4;
   text-decoration: none;
   transition: 0.3s;
@@ -63,6 +64,79 @@ li {
 }
   a:hover:after {
       width: 100%;  
+=======
+    color: #dbc8a4;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+    color: #c52a56;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    width: 141px;
+    height: 50px;
+  }
+  .logo img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  li {
+    position: relative;
+  }
+   li a:after{
+  
+    content: "";
+    position: absolute;
+    background-color: #c52a56;
+    height: 3px;
+    width:0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+  }
+    a:hover:after {
+        width: 100%;
+        
+    }
+    
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Bungee', cursive;
+    background: #23232e;
+    height: 108px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+ 
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+>>>>>>> ba49274307d3757f87a6d0221318f95c862aa3d1
   }
 
   footer a:hover:after {
