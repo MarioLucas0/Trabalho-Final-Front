@@ -3,14 +3,12 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    list-style: none;
-    
+    list-style: none;   
 }
-
 
 body {
     background-color: white;
-    
+    overflow: hidden;   
 }
 
 a {
@@ -104,9 +102,113 @@ a {
 
 
 .dados{
-    height: 1000px;
+    height: 510px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    
+}
+.dados .central {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  
+  
+}
+section .dados {
+  margin: 44px 0;  
+}
+.dados .central .card-perfil {
+  margin-top: 42px;
 }
 
+div.card-perfil {
+  overflow: hidden;
+  object-fit: cover;
+  margin: 0 auto;
+  width: 165px;
+  height: 155px;
+  border-radius: 100%;
+  cursor: pointer; 
+  border: 2px solid rgb(40, 57, 76);
+  box-shadow: rgb(40, 57, 76) 0px 10px 20px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+div.central .div-buttons {
+  
+  margin-top: 13px;
+  margin-left: 10px;
+}
+div.central .div-buttons a{
+  margin-left: 10px;
+  text-align: center;
+  color: #dbc8a4;
+  cursor: pointer;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  border-radius: 19px;
+  background: rgb(31 39 48);
+  height: 30px;
+  width: 68%; 
+  overflow: hidden;
+  
+}
+div.central .div-buttons a:hover {
+  transform: scale(1.1);
+  box-shadow: black 0px 10px 20px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  color:#c52a56;
+}
+div.central .div-buttons img {
+  width: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+div.central {
+  background-color: #23232e  ;
+  box-shadow: black 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+div.central h2 {
+  color: #dbc8a4;
+}
+
+div.card-perfil:hover {
+  transform: scale(1.1);
+}
+div.card-perfil img {
+   width: 100%; 
+}
+
+
+.dados .central .name {
+  font-size: 18px;
+  font-family: 'Bungee', cursive;
+  margin: 0 auto ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.dados .central .bio {
+  margin: 0 auto;
+  height: 100px;
+  width: 80%;
+  border: 2px solid rgb(33, 42, 53);
+  padding: 2px 10px;
+  overflow: hidden;
+  
+}
+.dados .central .bio:hover {
+  overflow-y:scroll;
+}
+
+.dados .central .bio p {
+  color: #dbc8a4;
+  font-size: 13px;
+}
 footer{
   background: #23232e;
   padding: 50px 0;
@@ -181,19 +283,7 @@ footer{
   background-color: #dbc8a4;        
 }
 
-section .dados {
-   margin-top: 100px;
-}
-div.card-perfil {
-   border: 2px solid black;
-   width: 100px;
-   height: 100px;
-   overflow: hidden;
-   object-fit: cover;
-}
-div.card-perfil img {
-    width: 100%;
-}
+
 
 /* Responsivo */
 @media (max-width: 800px) {

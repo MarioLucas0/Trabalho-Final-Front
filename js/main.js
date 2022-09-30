@@ -24,7 +24,7 @@ function createCard() {
     produtosCard.appendChild(divCentral)
    
     for(let i = 0; i < response.length; i++) {
-        
+         
     const divProdutos = document.createElement('div')
     divProdutos.classList = 'cards  fade-right'
     divCentral.appendChild(divProdutos)

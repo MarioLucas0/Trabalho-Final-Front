@@ -74,6 +74,9 @@ body::before {
   font-size: 18px;
 
 }
+.card-header h1 {
+  font-size: 18px;
+}
 
 .card-header img {
   

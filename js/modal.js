@@ -73,11 +73,5 @@ button.addEventListener('click', event => {
       createModalFaleConosco()
       event.preventDefault();
      } 
-  
-
- 
-
-  
-
    
  })
