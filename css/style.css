@@ -9,7 +9,7 @@
 
 
 body {
-    background-color: rgba(243, 219, 163, 0.654);
+    background-color: rgba(255, 255, 255, 0);
 }
   
   a {
@@ -64,7 +64,11 @@ body {
     a:hover:after {
         width: 100%;  
     }
-    
+
+    footer a:hover:after {
+      width: 46%;  
+    }
+  
   nav {
     display: flex;
     justify-content: space-around;
@@ -126,7 +130,7 @@ div#carouselExampleIndcators.carousel.slide {
 }
 
 .catalogo_produtos  {
-    margin-top: 50px;
+    margin: 50px 0;
     display: grid;
 
 }
@@ -154,24 +158,33 @@ div#carouselExampleIndcators.carousel.slide {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    cursor: pointer;;
+    cursor: pointer;
+
+    box-shadow: black 0px 10px 20px 0px, rgb(0 0 0 / 6%) 0px 0px 0px;
+
     
 }
 .cards .card-body {
     width: 100%;
     display: flex;
-    
     flex-direction: column;
+    color: #dbc8a4;
+    background: rgba(35, 35, 46, 0.941);
    
 }
 .cards .openModal {
-    height: 20px;
-    width: 25px;
 
     width: 107px;
     height: 39px;
     border-radius: 18px;
-    padding-left: 17px;
+    color: #dbc8a4;
+    background: rgb(31 39 48);
+    margin-left: 13px;
+}
+.cards .openModal:hover {
+ transform: scale(1.1);
+ box-shadow: black 0px 10px 20px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+ color: #c52a56;
 }
 .cards .card-body h5{
 
@@ -217,6 +230,10 @@ footer{
     padding: 50px 0;
     margin-top: 15px;
 }
+footer li a::after {
+  left: 10px;
+}
+
 .container-footer{
     max-width: 1400px;
     padding: 0 4%;
@@ -241,6 +258,7 @@ footer{
 }
 .footer-col ul{
     list-style: none;
+    padding-left: 0;
 }
 .footer-col ul li{
     margin: 10px 0;
