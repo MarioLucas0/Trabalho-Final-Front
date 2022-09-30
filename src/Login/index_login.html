@@ -10,7 +10,17 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../css/style_login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter+Tight:wght@600;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="style_login.css">
+
 
     <title>Login</title>
 
@@ -21,14 +31,11 @@
 
 
     <div id="login">
-        <form class="card" type="submit">
+        <form class="card-login" type="submit" alt="Area para fazer login no site atraves de usuario e e-mail">
             <div class="card-header">
 
-                <h1>Login</h1>
-
-                <!-- <img src="https://img2.gratispng.com/20180802/zuu/kisspng-qatar-2022-fifa-world-cup-bid-2018-world-cup-qatar-fallound-the-smartest-podcasts-aggregator-5b62b790aa9451.5238072715331961766987.jpg"
-                    alt="logo"> -->
-
+                <h1>Banca do </br> seu Zé</h1>
+                <img src="../../img/logo.svg" alt="Logo">
             </div>
 
             <div class="card-content">
@@ -37,7 +44,7 @@
 
                     <label for="usuario">Usuário</label>
 
-                    <input type="text" id="usuario" autocomplete="off">
+                    <input type="text" id="usuario" autocomplete="off" alt="Campo para digitar o usuario">
 
                 </div>
 
@@ -45,7 +52,7 @@
 
                     <label for="password">Senha</label>
 
-                    <input type="password" id="senha" autocomplete="off">
+                    <input type="password" id="senha" autocomplete="off" alt="campo para digitar sua senha">
 
                 </div>
 
@@ -53,32 +60,48 @@
 
             <div class="card-footer">
 
-                <button type="submit" class="validar" onclick="logar(); return false">Login</button>
+                <button type="submit" class="validar" alt="Botao para logar">Login</button>
+
+                <!-- <button type="submit" class="validar" alt="Botao para logar"
+                    onclick="logar(); return false">Login</button> -->
 
 
-                <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+                <a href="#" class="recuperar_senha h-25" alt="campo para recuperar senha">Esqueceu a <button
+                        type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Senha ?
+                    </button></a>
 
             </div>
 
         </form>
     </div>
 
-    <script>
-        function logar() {
 
-            var usuario = document.getElementById('usuario').value;
-            var senha = document.getElementById('senha').value;
 
-            if (usuario == "admin" && senha == "123") {
-                alert('Sucesso');
-                location.href = "../Home/index.html";
-            } else {
-                alert('Usuario ou senha incorretos!');
-            }
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Troca de senha!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Você receberá um e-mail para alterar a sua senha!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        }
 
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="/js/login.js"></script>
 </body>
 
 </html>

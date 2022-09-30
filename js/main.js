@@ -6,13 +6,13 @@ const openModal = document.querySelector('.openModal')
 
 
 window.onload =  createCard;
-AOS.init({
-  duration: 2000,
-  once: true
-})
+
 function createCard() {
 
-
+  AOS.init({
+    duration: 2000,
+    once: true
+  })
 
     fetch('https://mocki.io/v1/ccb7defb-403b-4b7e-9af8-5a4b1a6eac11')
     .then(response => response.json())  
@@ -51,12 +51,13 @@ function createCard() {
    
     }
     const openModal =  document.querySelectorAll('.openModal')
-   // const buttonCard = document.querySelector('button')
+   
    
             
     
 
     openModal.forEach((card) => {
+               /* Arrow function abaixo */
         card.addEventListener('click', () => {
           let codeCard =  card.getAttribute('code-card')
        
@@ -118,36 +119,6 @@ function createCard() {
                }
             })      
           })
-       
-
-         
-         
-    
-          /* 
-         
-            const closeModal = document.querySelector('.js-close-modal')
-        
-            openModal.addEventListener('click', event => {
-            event.preventDefault()
-            console.log(openModal)
-            let html = document.querySelector('html') 
-            html.classList.add('show-modal')
-            })
-        
-            const btnCloseModal = document.querySelector('.js-close')
-        
-            closeModal.addEventListener('mouseleave', () => {
-            let html = document.documentElement
-            html.classList.remove('show-modal')
-            })
-        
-            btnCloseModal.addEventListener('click', event => {
-            event.preventDefault()
-            let html = document.documentElement
-            html.classList.remove('show-modal')
-            console.log('ok')
-            }) */
-           
       
         })
 
@@ -183,6 +154,8 @@ class MobileNavbar {
     this.navList.classList.toggle(this.activeClass);
     this.mobileMenu.classList.toggle(this.activeClass);
     this.animateLinks();
+    console.log('passou aki')
+   
   }
 
   addClickEvent() {
@@ -203,4 +176,11 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list li",
 );
 mobileNavbar.init();
+
+
+
+
+
+
+
 

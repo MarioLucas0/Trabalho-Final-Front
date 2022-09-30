@@ -9,35 +9,52 @@
 
 
 body {
-    background-color: white;
+    background-color: rgba(243, 219, 163, 0.654);
 }
   
   a {
-    color: #fff;
+    color: #dbc8a4;
     text-decoration: none;
     transition: 0.3s;
   }
   
   a:hover {
     opacity: 0.7;
-    color: blue;
+    color: #c52a56;
   }
-  
   .logo {
-    display: flex;
-    align-items: center;
-    width: 141px;
-    height: 50px;
+    width: 654px
   }
   .logo img {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 105px;
+  }
+  .logo a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 105px;
+  }
+  
+  .logo img {
+    width: 31%;
+  }
+  .logo p {
+    color:#dbc8a4;
+    font-size: 38PX;
     width: 100%;
   }
+  li {
+    position: relative;
+  }
 
-  a:after{
+   li a:after{
   
     content: "";
     position: absolute;
-    background-color: blue;
+    background-color: #c52a56;
     height: 3px;
     width:0;
     left: 0;
@@ -45,8 +62,7 @@ body {
     transition: 0.3s;
   }
     a:hover:after {
-        width: 100%;
-        
+        width: 100%;  
     }
     
   nav {
@@ -104,6 +120,9 @@ body {
 div#carouselExampleIndcators.carousel.slide {
     height: 370px;
     width: 100%;
+}
+.slide {
+  overflow: hidden;
 }
 
 .catalogo_produtos  {
@@ -266,7 +285,7 @@ footer{
     font-weight: bold;
     background-color: #dbc8a4;        
 }
-.show-modal .modal {
+  .show-modal .modal {
     opacity: 1;
     pointer-events: all;
   }

@@ -5,9 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter+Tight:wght@600;800&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="fale_conosco.css">
+
 
   <title>Fale conosco</title>
 </head>
@@ -15,8 +20,8 @@
 <body>
   <header>
     <nav>
-      <div class="logo">
-        <a href="/"><img src="/img/logo.svg" alt=""></a>
+      <div class="logo" alt="cabecalho do site">
+        <a href="/"><img src="/img/logo.svg" alt="logo do site"></a>
       </div>
 
       <div class="mobile-menu">
@@ -25,90 +30,111 @@
         <div class="line3"></div>
       </div>
       <ul class="nav-list">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Fale Conosco</a></li>
+        <li><a href="../Home/index.html" alt="Inicio">Início</a></li>
+        <li><a href="../SobreNos/index_sobre.html" alt="Sobre">Sobre</a></li>
+        <li><a href="fale_conosco.html" alt="Fale conosco">Fale conosco</a></li>
 
       </ul>
     </nav>
   </header>
 
-  <div class="container2">
-    <h1>Fale conosco</h1>
-    <form target="_self" action="validacaoform.html">
-      <div>
-        <input type="text" placeholder="Digite seu nome" class="inputs" required>
-      </div>
-      <div>
-        <input type="email" placeholder="Digite seu email" class="inputs" required>
-      </div>
-      <div>
-        <input type="tel" placeholder="Digite seu (DDD)+Telefone" class="inputs" required>
-      </div>
-      <div>
-        <input type="number" placeholder="Numero do pedido" class="inputs" required>
-      </div>
-      <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Descreva sua solicitação"
-        class="inputs" required></textarea>
+  <section class="form">
 
-      <h2>Assunto</h2>
+    <div class="container2" alt="Formulario">
+      <h1>Fale conosco</h1>
+      <form target="_self" action="validacaoform.html">
+        <div>
+          <input type="text" placeholder="Digite seu nome" id="nome" class="inputs" required alt="Digite seu Nome">
+        </div>
+        <div>
+          <input type="email" placeholder="Digite seu email" id="email" class="inputs" required alt="Digite seu e-mail">
+        </div>
+        <div>
+          <input type="tel" placeholder="Digite seu (DDD)+Telefone" id="tel" class="inputs" required
+            alt="Digite seu telefone com DDD de prefixo">
+        </div>
+        <div>
+          <input type="number" placeholder="Numero do pedido" id="numero" class="inputs" required
+            alt="Digite o numero do pedido">
+        </div>
+        <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Descreva sua solicitação"
+          class="inputs" required alt="Descreva sua solicitação"></textarea>
 
-      <div class="box-select">
-        <div>
-          <input type="radio" id="troca" value="troca" name="assunto">
-          <label for="troca">Troca</label>
-        </div>
-        <div>
-          <input type="radio" id="devolucao" value="devolucao" name="assunto">
-          <label for="devolucao">Devolução</label>
-        </div>
-        <div>
-          <input type="radio" id="defeito" value="defeito" name="assunto">
-          <label for="defeito">Defeito</label>
-        </div>
-        <div>
-          <input type="radio" id="outro" value="outro" name="assunto">
-          <label for="outro">Outro</label>
-        </div>
-      </div>
+        <h2>Assunto</h2>
 
-      <h2>Conte nos sua experiencia em nosso site</h2>
-      
-      <div id="experiencia">
-        <div>
-          <input type="radio" value="pessima" name="avaliacao">
-          <label for="pessima">Pessima</label>
-        </div>
-        <div>
-          <input type="radio" value="ruim" name="avaliacao">
-          <label for="ruim">Ruim</label>
-        </div>
-        <div>
-          <input type="radio" value="regular" name="avaliacao">
-          <label for="regula">Regular</label>
-        </div>
-        <div>
-          <input type="radio" value="bom" name="avaliacao">
-          <label for="boa">boa</label>
-        </div>
-        <div>
-          <input type="radio" value="excelente" name="avaliacao">
-          <label for="excelente">Excelente</label>
+        <div class="box-select">
+          <div>
+            <input type="radio" id="troca" value="troca" name="assunto" alt="marcar esse campo em caso de troca">
+            <label for="troca">Troca</label>
+          </div>
+          <div>
+            <input type="radio" id="devolucao" value="devolucao" name="assunto"
+              alt="marcar esse campo em caso de devoluçao">
+            <label for="devolucao">Devolução</label>
+          </div>
+          <div>
+            <input type="radio" id="defeito" value="defeito" name="assunto"
+              alt="marcar esse campo em caso de produto com defeito">
+            <label for="defeito">Defeito</label>
+          </div>
+          <div>
+            <input type="radio" id="outro" value="outro" name="assunto" alt="marcar esse campo caso de outro assunto">
+            <label for="outro">Outro</label>
+          </div>
         </div>
 
-      </div>
-      <div id="btn-enviar">
-        <div>
-          <INPUT type="reset" value="Limpar">
-        </div>
-        <div>
-          <input type="submit" value="Enviar">
-        </div>
+        <h2>Conte nos sua experiencia em nosso site</h2>
 
-      </div>
+        <div id="experiencia">
+          <div>
+            <input type="radio" value="pessima" name="avaliacao"
+              alt="marcar essa opcao caso sua experienca no site tenha sido pessima">
+            <label for="pessima">Pessima</label>
+          </div>
+          <div>
+            <input type="radio" value="ruim" name="avaliacao"
+              alt="marcar essa opcao caso sua experienca no site tenha sido ruim">
+            <label for="ruim">Ruim</label>
+          </div>
+          <div>
+            <input type="radio" value="regular" name="avaliacao"
+              alt="marcar essa opcao caso sua experienca no site tenha sido regular">
+            <label for="regula">Regular</label>
+          </div>
+          <div>
+            <input type="radio" value="bom" name="avaliacao"
+              alt="marcar essa opcao caso sua experienca no site tenha sido boa">
+            <label for="boa">Boa</label>
+          </div>
+          <div>
+            <input type="radio" value="excelente" name="avaliacao"
+              alt="marcar essa opcao caso sua experienca no site tenha sido Excelente">
+            <label for="excelente">Excelente</label>
+          </div>
+
+        </div>
+        <div class="btns">
+          <div class="button btn-limpar">
+            <button type="reset" alt="botao para limpar o conteudo da tela">Limpar</button>
+          </div>
+          <div class="button btn-enviar">
+            <button type="submit" alt="botao para enviar o formulario">Enviar</button>
+          </div>
+        </div>
+    </div>
+    </form>
+    </div>
+  </section>
+
+
+
+  <div class="modal">
+
+
   </div>
-  </form>
-  </div>
+
+
+
   <footer>
     <div class="container-footer">
       <div class="row-footer">
@@ -116,7 +142,7 @@
         <div class="footer-col">
           <h4>Empresa</h4>
           <ul>
-            <li><a href="#">Quem somos </a></li>
+            <li><a href="../SobreNos/index_sobre.html" alt="link par a pagina quem somos">Quem somos </a></li>
 
           </ul>
         </div>
@@ -125,7 +151,7 @@
         <div class="footer-col">
           <h4>Obter ajuda</h4>
           <ul>
-            <li><a href="#">Entre em contato</a></li>
+            <li><a href="../FaleConosco/fale_conosco.html" alt="link para a pagina Fale Conosco">Fale conosco</a></li>
 
           </ul>
         </div>
@@ -133,8 +159,8 @@
         <div class="footer-col">
           <h4>Loja online</h4>
           <ul>
-            <li><a href="#">Figurinhas Ícones</a></li>
-            <li><a href="#">Figurinhas lendárias</a></li>
+            <li><a href="../Home/index.html" alt="ir para a tela de produtos">Figurinhas Ícones</a></li>
+            <li><a href="../Home/index.html" alt="ir para a tela de produtos">Figurinhas lendárias</a></li>
 
           </ul>
         </div>
@@ -143,8 +169,9 @@
           <h4>RECEBA AS NOVIDADES!</h4>
           <div class="form-sub">
             <form>
-              <input type="email" placeholder="Digite o seu e-mail" required>
-              <button>inscreva-se</button>
+              <input type="email" placeholder="Digite o seu e-mail" required
+                alt="Digite seu e-mail para recer as novidades">
+              <button type="button" class="btn btn-secondary">Inscreva-se</button>
             </form>
           </div>
 
@@ -155,7 +182,8 @@
       </div>
     </div>
   </footer>
-  <script src="./javascript.js"></script>
+
+  <script src="/js/modal.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>

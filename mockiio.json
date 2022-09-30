@@ -1,4 +1,4 @@
-[ 
+/* [ 
     {
       "id": "1",
       "name": "Away de Petrópolis",
@@ -59,10 +59,10 @@
       "img": "https://i.postimg.cc/qq5FzbqF/acai.png",
       "descricao": "Tem gente que come com peixe e tem gente que come com frutas.(Com leite em pó por cima fica coisa de maluco) "
     }
-]
+],
 
 
-/* [
+ [
   {
    "id": "1",
    "cardId": "1",
@@ -145,8 +145,8 @@
   }
  ]
 
+ 
  */
-
 
  
  
@@ -172,3 +172,26 @@
     "url": "https://api.github.com/users/AlanMarujo"
   },
 ] */
+
+[
+  {
+    "usuario": "Pedro",
+    "senha": "123321"
+  },
+  {
+    "usuario": "Rodrigo",
+    "senha": "456654"
+  },
+  {
+    "usuario": "Mario",
+    "senha": "789987"
+  },
+  {
+    "usuario": "Bruno",
+    "senha": "159951"
+  },
+  {
+    "usuario": "Alan",
+    "senha": "753357"
+  }
+]
