@@ -1,7 +1,0 @@
-Paleta de cores
-
-Vermelho#c52a56
-vermelho escuro #7c234e
-Bege #dbc8a4
-Azul claro #05dbcd
-Azul escuro #055dd4

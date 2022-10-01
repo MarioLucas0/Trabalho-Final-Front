@@ -42,12 +42,27 @@ function createCard() {
     const h5 = document.createElement('h5')
     h5.textContent = `${response[i].name}`
     divCardBody.appendChild(h5)
+
+
+    const divBottomCard = document.createElement('div');
+    divBottomCard.classList = 'bottom'
+    divCardBody.appendChild(divBottomCard)
+
+
     
     const buttonOpenModal = document.createElement('button')
     buttonOpenModal.classList = 'js-open-modal openModal'
     buttonOpenModal.setAttribute('code-card', response[i].id)
     buttonOpenModal.textContent = 'VER MAIS...'
-    divCardBody.appendChild(buttonOpenModal)
+    divBottomCard.appendChild(buttonOpenModal)
+
+   
+    const carrinhoCompra = document.createElement('img')
+    carrinhoCompra.classList = 'carrinho-compra'
+    carrinhoCompra.src = '/img/carrinho-de-compras.svg'
+    carrinhoCompra.alt = 'icone de compras'
+    divBottomCard.appendChild(carrinhoCompra)
+
    
     }
     const openModal =  document.querySelectorAll('.openModal')

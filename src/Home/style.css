@@ -169,7 +169,7 @@ div#carouselExampleIndcators.carousel.slide {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    cursor: pointer;
+ 
 
     box-shadow: black 0px 10px 20px 0px, rgb(0 0 0 / 6%) 0px 0px 0px;
 
@@ -212,6 +212,20 @@ div#carouselExampleIndcators.carousel.slide {
     font-family: 'Inter Tight', sans-serif;
     font-weight: 600;
 }
+.cards .card-body .bottom  {
+  display: flex;
+  justify-content: space-around;
+}
+.cards .card-body .bottom img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.cards .card-body .bottom img:hover {
+  transform: scale(1.1);
+  
+}
+
 .cards::before {
     z-index: -2;
     content: '';
@@ -474,15 +488,7 @@ footer li a::after {
     
   }
 
-  @media screen and (max-width: 1050px)
-  {
- 
-    div.box.js-close-modal {
-        height: 48rem;
-    }
-  }
-
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 1050px) {
     body {
         overflow-x: hidden;
       }
@@ -509,12 +515,17 @@ footer li a::after {
       .mobile-menu {
         display: block;
       }
+     .cards {
+      width: 183px;
+      height: 343px;
+     }
     .catalogo_produtos .central {
-        display: grid;
-        grid-template-columns: 260px 260px ;
-        gap: 53px; 
-        
+      grid-template-columns: repeat(3,34%);
+      gap: 37px;
     }
+    div.box.js-close-modal {
+      height: 48rem;
+  }
 
   }
   @media  screen and (max-width: 800px) {
@@ -523,22 +534,158 @@ footer li a::after {
         margin-bottom: 30px;
     }
     }
+    @media screen and (max-width:700px) {
+
+      .cards {
+        width: 160px;
+        height: 318px;
+        }
+        .cards .card-body h5 {
+          font-size: 16px;
+        }
+        .cards .card-body button{
+          font-size: 10px;
+          width: 71px;
+        }
+
+        .catalogo_produtos .central {
+          grid-template-columns: repeat(3,33%);
+          gap: 23px;
+        }
+
+      }
+
+
    @media screen and (max-width:600px) {
         .footer-col{
             width: 100%;
         }
+        div.box.js-close-modal {
+
+          width: 100%;
+          max-width: 49rem;
+          height: 40rem;
+     
+      }
+      .logo a {
+        width: 70%;
+      }
+      .logo p {
+        font-size: 22px;
+      }
+      .cards .card-body .bottom button {
+        font-size: 8px;
+        width: 62px;
+        margin-left: 0;
+    }
+      .cards .card-body h5 {
+          font-size: 11px; 
+      }
+      .cards {
+        width: 131px;
+        height: 265px;
+       }
+      .catalogo_produtos .central {
+        grid-template-columns: repeat(3,33%);
+        gap: 23px;
+      }
     }
 
-  @media screen and  (max-width: 550px) {
-
-    div.box.js-close-modal {
+    @media screen and (max-width:600px) {
+      .footer-col{
+          width: 100%;
+      }
+      div.box.js-close-modal {
 
         width: 100%;
         max-width: 49rem;
         height: 40rem;
    
     }
+    .logo a {
+      width: 70%;
+    }
+    .logo p {
+      font-size: 22px;
+      font-size: 19px;
+    }
+    .cards .card-body .bottom button {
+      font-size: 8px;
+      width: 62px;
+      margin-left: 0;
   }
+    .cards .card-body h5 {
+        font-size: 11px; 
+    }
+    .cards {
+      width: 131px;
+      height: 265px;
+     }
+    .catalogo_produtos .central {
+      grid-template-columns: repeat(3,33%);
+      gap: 23px;
+    }
+  }
+  @media screen and (max-width:511px) {
+    .cards .card-body .bottom button {
+      font-size: 7px;
+      width: 49px;
+      height: 25px;
+      margin-left: 0;
+  }
+  .logo p {
+
+    font-size: 17px;
+    font-size: 16px;
+  }
+    .cards .card-body h5 {
+      font-size: 7px;
+    }
+    .cards {
+      width: 114px;
+      height: 227px;
+     }
+    .catalogo_produtos .central {
+      grid-template-columns: repeat(3,33%);
+      gap: 10px;
+    }
+    .cards .card-body .bottom img {
+      width: 23px;
+    }
+  
+  }
+
+  @media screen and (max-width:390px) {
+    .cards .card-body .bottom button {
+      font-size: 7px;
+      width: 49px;
+      height: 25px;
+      margin-left: 0;
+  }
+  .logo p {
+
+ 
+    font-size: 16px;
+  }
+    .cards .card-body h5 {
+      font-size: 7px;
+    }
+    .cards {
+      width: 96px;
+      height: 200px;
+     }
+    .catalogo_produtos .central {
+      grid-template-columns: repeat(3,33%);
+      gap: 8px;
+    }
+    .cards .card-body .bottom img {
+      width: 23px;
+    }
+  
+  }
+
+
+
   @keyframes navLinkFade {
     from {
       opacity: 0;
