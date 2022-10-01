@@ -20,6 +20,19 @@ function logar() {
        var contador = 0;
        for(var i = 0; i < response.length; i++) { 
 
+<<<<<<< HEAD:src/Login/login.js
+            alert('Bem vindo(a)!', alt = "Login realizado com suceeso");
+            location.href = "../Home/index.html";
+            ctx.beginPath()
+         
+            
+         } else {
+            alert('Usuario ou senha incorretos!', alt = "usuario ou senha invalidos.");
+            ctx.beginPath()  
+         } 
+      }) 
+       
+=======
         console.log(response[i])
          
         if (response[i].usuario === usuario && response[i].senha === senha) {
@@ -32,6 +45,7 @@ function logar() {
        if(contador === 0) {
          alert('Usuario ou senha incorretos!', alt = "usuario ou senha invalidos.");
        }       
+>>>>>>> 6e7e370d119d8cb285209416a18068a4cd7d9e4a:js/login.js
   })
 
 
