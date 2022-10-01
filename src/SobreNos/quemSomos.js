@@ -109,6 +109,7 @@ function quemSomos() {
 
     })
 }
+
 class MobileNavbar {
   constructor(mobileMenu, navList, navLinks) {
     this.mobileMenu = document.querySelector(mobileMenu);
@@ -155,7 +156,3 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list li",
 );
 mobileNavbar.init();
-
-
-
-
