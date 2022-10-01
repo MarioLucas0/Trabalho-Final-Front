@@ -44,7 +44,7 @@
   </header>
 
 
-  <section class="form flip-left">
+  <section class="form" data-aos="zoom-in-up">
 
     <div class="container2" alt="Formulario">
       <h1>Fale conosco</h1>
@@ -185,12 +185,14 @@
     </div>
   </footer>
 
-  <script src="modal.js"></script>
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 2500,
+      once: true
+    })
   </script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="modal.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
