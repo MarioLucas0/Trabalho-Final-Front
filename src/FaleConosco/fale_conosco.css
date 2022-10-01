@@ -206,7 +206,7 @@ body {
     display: block;
     min-width: 20%;
     overflow: auto;
-    width: 50%;
+    width: 62%;
     box-shadow: black 0px 5px 18px; 
  
 }
@@ -530,16 +530,11 @@ footer li a::after {
  object-fit: fill;
  padding-bottom: 30px;
 }
-@media (max-width: 800px) {
-    .footer-col{
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
-@media (max-width:600px) {
-    .footer-col{
-        width: 100%;
-    }
+
+@media screen and (max-width: 1500px)  {
+  .container2 {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -576,8 +571,44 @@ footer li a::after {
       gap: 53px; 
       
   }
+  .container2 {
+    width: 80%;
+  }
 
 }
+@media (max-width: 800px) {
+  .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+}
+@media (max-width:600px) {
+  .footer-col{
+      width: 100%;
+  }
+  .logo p {
+    font-size: 24px;
+  }
+  .container2 #experiencia {
+    grid-template-columns: repeat(2, 52%);
+    display: grid;
+  }
+  .container2 #experiencia div {
+  display: flex;
+  justify-content: center;
+  }
+
+  .container2 .box-select{
+    grid-template-columns: repeat(2, 36%);
+    display: grid;
+    
+  }
+  .container2 .box-select div {
+    display: flex;
+    justify-content: center;
+    }
+}
+
   @keyframes navLinkFade {
     from {
       opacity: 0;
