@@ -25,11 +25,10 @@ function logar() {
         if (response[i].usuario === usuario && response[i].senha === senha) {
 
             location.href = "../Home/index.html"; 
-            contador +=  1;          
-           
+            contador +=  1;             
          }   
        }
-       console.log(contador)
+
        if(contador === 0) {
          alert('Usuario ou senha incorretos!', alt = "usuario ou senha invalidos.");
        }       

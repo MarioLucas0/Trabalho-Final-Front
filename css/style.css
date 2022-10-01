@@ -1,4 +1,5 @@
-* {
+
+  * {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
@@ -34,7 +35,7 @@ body {
   .logo a {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 75%;
     height: 105px;
   }
   
@@ -43,7 +44,7 @@ body {
   }
   .logo p {
     color:#dbc8a4;
-    font-size: 38PX;
+    font-size: 30PX;
     width: 100%;
   }
   li {
@@ -68,59 +69,69 @@ body {
     footer a:hover:after {
       width: 46%;  
     }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family: 'Bungee', cursive;
+      background: #23232e;
+      height:11vh;
+    }
+    
+    ul.nav-list {
+      list-style: none;
+      display: flex;
+    }
+    
+    ul.nav-list li {
+      letter-spacing: 3px;
+      margin-left: 32px;
+    }
+   
+    
+    .mobile-menu {
+      display: none;
+      cursor: pointer;
+    }
+    
+    div.mobile-menu div {
+      width: 32px;
+      height: 2px;
+      background: #fff;
+      margin: 8px;
+      transition: 0.3s;
+    }
   
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Bungee', cursive;
-    background: #23232e;
-    height:11vh;
-  }
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
-  }
- 
-  
-  .mobile-menu {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
-
-  .nav-list.active {
-    transform: translateX(0);
-    z-index: 11;
-  }
-  
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
-  
- 
-
+    .nav-list.active {
+      transform: translateX(0);
+      z-index: 11;
+    }
+    
+    .mobile-menu.active .line1 {
+      transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    
+    .mobile-menu.active .line2 {
+      opacity: 0;
+    }
+    
+    .mobile-menu.active .line3 {
+      transform: rotate(45deg) translate(-5px, -7px);
+    }
+    
+    .mobile-menu.active .line1 {
+      transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    
+    .mobile-menu.active .line2 {
+      opacity: 0;
+    }
+    
+    .mobile-menu.active .line3 {
+      transform: rotate(45deg) translate(-5px, -7px);
+    }
+    
+   
 div#carouselExampleIndcators.carousel.slide {
     height: 370px;
     width: 100%;
