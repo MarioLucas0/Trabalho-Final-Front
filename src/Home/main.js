@@ -14,7 +14,7 @@ function createCard() {
     once: true
   })
 
-    fetch('https://mocki.io/v1/ccb7defb-403b-4b7e-9af8-5a4b1a6eac11')
+    fetch('https://mocki.io/v1/401451ee-6f19-4d35-9ee3-d13d2772352a')
     .then(response => response.json())  
     .then(response => {
 
@@ -119,6 +119,11 @@ function createCard() {
            p.classList = 'card_text'
            p.textContent = `${response[0].descricao}`
            divTextModal.appendChild(p) 
+
+           const valor = document.createElement('p')
+           valor.classList = 'card_text'
+           valor.textContent = `${response[0].preco}`
+           divTextModal.appendChild(valor) 
 
 
            let html = document.documentElement

@@ -392,6 +392,7 @@ footer li a::after {
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
+    overflow: hidden;
   }
   .modal .box .close {
     position: absolute;
@@ -421,7 +422,7 @@ footer li a::after {
     padding-top: 40px;
   }
   .modal .box .caixa_gif{
-    width: 614px;
+    width: 80%;
     height: 600px;
     overflow: hidden;
     margin-bottom: 43px;
@@ -464,6 +465,9 @@ footer li a::after {
     .modal {
         margin-top: 40px;
     }
+    .modal .box .caixa_gif {
+      width: 51%;
+    } 
  
    
     .slide .carousel-control-next {
@@ -525,8 +529,10 @@ footer li a::after {
     }
     div.box.js-close-modal {
       height: 48rem;
-  }
-
+   }
+   .modal .box .caixa_gif {
+    width: 61%;
+    } 
   }
   @media  screen and (max-width: 800px) {
     .footer-col{
@@ -589,6 +595,13 @@ footer li a::after {
         grid-template-columns: repeat(3,33%);
         gap: 23px;
       }
+      .modal .box .caixa_gif {
+        width: 51%;
+        } 
+
+        .modal .box .div_text_modal .card_text{
+          font-size: 31px;
+          } 
     }
 
     @media screen and (max-width:600px) {
@@ -696,7 +709,7 @@ footer li a::after {
       transform: translateX(0);
     }
   }
-  
+
 @keyframes animate {
     0% {
         transform: rotate(0deg);
