@@ -541,6 +541,7 @@ footer li a::after {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 990px) {
   body {
       overflow-x: hidden;
