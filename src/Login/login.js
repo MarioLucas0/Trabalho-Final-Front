@@ -21,7 +21,8 @@ function logar() {
             alert('Bem vindo(a)!', alt = "Login realizado com suceeso");
             location.href = "../Home/index.html";
             ctx.beginPath()
-           
+         
+            
          } else {
             alert('Usuario ou senha incorretos!', alt = "usuario ou senha invalidos.");
             ctx.beginPath()  
